@@ -1,0 +1,177 @@
+@use "../abstracts" as a;
+.frm_required {
+    display: none;
+}
+#frm_field_14_container {
+    .frm_opt_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+        max-width: 100%;
+        margin: auto;
+        @include a.md {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+        .frm_image_option {
+            width: 100% !important;
+            margin: 0 !important;
+            > label {
+                padding: 0 !important;
+            }
+            .frm_image_option_container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                cursor: pointer;
+                img {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / -1;
+                    object-fit: contain !important;
+                }
+                > span {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / -1;
+                    text-align: start;
+                    margin: 0px 0px 0px 17px;
+                    > span {
+                        background: linear-gradient(
+                            to right,
+                            black 0% 0.3em,
+                            black 0em 1.6em,
+                            a.$mirblue 1.2em 100%
+                        );
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+        #frm_radio_14-0, #frm_radio_14-1, #frm_radio_14-2, #frm_radio_14-3, #frm_radio_14-4, #frm_radio_14-5, #frm_radio_14-6 {
+            .frm_image_option_container {
+                > span {
+                    font-size: 30px;
+                    font-weight: 600;
+                    > span::after {
+                       
+                        background: none;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: black;
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        #frm_radio_14-0 {
+            .frm_image_option_container {
+                > span {
+                    > span::after {
+                        content: "100kg payload";
+                    }
+                }
+            }
+        }
+        #frm_radio_14-1 {
+            .frm_image_option_container {
+                > span {
+                    > span::after {
+                        content: "500kg payload";
+                    }
+                }
+            }
+        }
+        #frm_radio_14-2 {
+            .frm_image_option_container {
+                > span {
+                    > span::after {
+                        content: "600kg payload";
+                    }
+                }
+            }
+        }
+        #frm_radio_14-3 {
+            .frm_image_option_container {
+                > span {
+                    > span::after {
+                        content: "1000kg payload";
+                    }
+                }
+            }
+        }
+        #frm_radio_14-4 {
+            .frm_image_option_container {
+                > span {
+                    > span::after {
+                        content: "1350kg payload";
+                    }
+                }
+            }
+        }
+        #frm_radio_14-5 {
+            .frm_image_option_container {
+                > span {
+                    > span::after {
+                        content: "250kg payload";
+                    }
+                }
+            }
+        }
+        #frm_radio_14-6 {
+            .frm_image_option_container {
+                > span {
+                    > span::after {
+                        content: "250kg payload";
+                    }
+                }
+            }
+        }
+    }
+}
+
+.robotCalcInfoBoxDistanceIcon {
+    cursor: pointer;
+}
+.robotCalcInfoBoxDistanceBox {
+    position: absolute;
+    padding: 20px 40px;
+    background-color: #000;
+    p {
+        color: #fff;
+    }
+}
+.robotCalcInfoBoxDistanceIcon:hover .robotCalcInfoBoxDistanceBox {
+   display: block !important;
+   max-width: 400px;
+}
+
+.page-calculator-shortcode__inner {
+    h1, h3 {
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+#frm_field_14_container {
+    margin-bottom: 80px;
+}
+
+.frm_message {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.page-template-page-calculators {
+    h4 {
+        text-align: center;
+        max-width: 400px;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+}

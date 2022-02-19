@@ -1,0 +1,58 @@
+@use '../abstracts' as a;
+@use '../base/fonts' as f;
+
+h1 {
+    @include f.oscine;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1
+}
+h2 {
+    @include f.oscine;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1
+}
+h3 {
+    @include f.oscine;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    margin-block-end: 0em;
+}
+h4 {
+    @include f.oscine;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1;
+    margin-block-end: 0em;
+}
+p {
+    @include f.opensans;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4
+}
+a {
+    @include f.opensans;
+    font-weight: 300;
+    font-size: 14px;
+    color: a.$black;
+    text-decoration: none;
+}
+ul {
+    
+}
+li {
+    @include f.opensans;
+    font-weight: 300;
+    font-size: 16px;
+    color: a.$black;
+    text-decoration: none;
+}
+
+span {
+    @include f.oscine;
+    
+    line-height: 1.4
+}

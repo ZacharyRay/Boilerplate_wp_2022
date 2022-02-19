@@ -1,0 +1,30 @@
+@use '../abstracts' as a;
+.header_container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu-header-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    li {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    a {
+       height: 100%;
+    }
+    li:hover {
+        border-bottom: 1px solid a.$black;
+    }
+}

@@ -1,0 +1,60 @@
+@use '../abstracts' as a;
+.footer_container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.footer__1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#menu-footer-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+   
+    li {
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    a {
+       height: 100%;
+       text-decoration: underline;
+    }
+    
+}
+#menu-footer-menu {
+    padding-inline-start: 0px;
+}
+
+.footer__2, .footer__3 {
+    width: 178px;
+    display: flex;
+    flex-direction: column;
+    @include a.md {
+        flex-direction: row;
+        width: 400px;
+    }
+    p {
+        margin-right: 30px;
+        font-size: 14px;
+    }
+}
+
+.footer__3 {
+    p {
+        font-size: 10px;
+    }
+}
+
+// WPML
+
+.wpml-ls-statics-footer {
+    max-width: 1300px;
+    margin: auto;
+}

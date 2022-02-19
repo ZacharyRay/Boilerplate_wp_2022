@@ -1,0 +1,5 @@
+@use '../abstracts' as a;
+
+.content-wrapper {
+    @include a.maxwidth;
+}
